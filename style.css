@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  font-size: 13px;
+}
+
+.container {
+    width: 83%;
+    margin: 8px auto;
+    padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: #FF6600;
+  width: 100%;
+  height: 31px;
+  padding: 2px 0;
+}
+
+nav p.navbarTitle {
+  font-weight: bold;
+  margin: 2px 3px 0 2px;
+  width: 100px;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 3.5px;
+  margin-top: 2px;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+  /*margin-right: -2px;*/
+  /*align-items: flex-end;*/
+}
+
+nav ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+main {
+  background-color: #F6F6EF;
+  margin-top: -20px;
+  width: 100%;
+  height: 100%;
+}
+
+main ol li {
+  color: #A8A8A8;
+  width: 100%;
+  height: 32px;
+}
+
+main ol li img[alt="Arrow Up"] {
+  width: 9px;
+  height: 14px;
+  float: left;
+  margin-right: 1px;
+}
+
+main ol li .newArticle {
+  color: #000;
+  display: block;
+}
+
+main ol .newArticle > a {
+  color: #000;
+  text-decoration: none;
+}
+
+main ol .inlineSource a {
+  color: #A8A8A8;
+  text-decoration: none;
+}
+
+main ol .inlineSource a:hover {
+  text-decoration: underline;
+}
+
+main ol p.articleInfo a {
+  color: #A8A8A8;
+  text-decoration: none;
+}
+
+main ol p.articleInfo a:hover {
+  text-decoration: underline;
+}
+
+main ol li .inlineSource {
+  color: #A8A8A8;
+}
+
+main ol li .articleInfo {
+  font-size: .85em;
+  font-weight: bold;
+  margin-top: 0;
+  margin-left: 10px;
+  /*border: 1px solid yellow;*/
+}
+
+img.navbarLogo {
+  border: 1px solid #FFF;
+  width: 20px;
+  height: 20px;
+  margin: 0 1.5px 0 2px;
+}
+
+li:last-of-type {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li:last-of-type a {
+  color: #A8A8A8;
+  text-decoration: none;
+}
+
+hr {
+  background-color: #FF6600;
+  height: 3px;
+  margin-top: -30px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+}
+
+footer ul {
+  font-size: .8em;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2px;
+}
+
+footer ul li {
+  margin-right: 2px;
+}
+
+footer ul + p {
+  font-size: .9em;
+  color: #A8A8A8;
+  margin-left: 12px;
+}
+
+footer ul + p > input {
+    width: calc(100% - 60px);
+}
+
+footer ul li:nth-child(odd) {
+  cursor: pointer;
+}
+
+@media (max-width:750px) {
+  .container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  nav {
+    height: 48px;
+    padding: 11px 0;
+    flex-direction: column;
+  }
+  nav ul {
+    margin-top: -1px;
+    margin-left: 30px;
+    font-size: .9em;
+    /*border: 1px solid gray;*/
+  }
+  nav p.navbarTitle {
+    font-size: 1.17em;
+    /*margin-left: 30px;*/
+    margin-top: -30px;
+    margin-left: 31px;
+  }
+  nav ul li {
+  }
+  img.navbarLogo {
+    margin-right: 9px;
+  }
+  nav ul li:last-child {
+    margin-top: -6px;
+  }
+  main {
+    font-size: 1.1em;
+  }
+  main .newsStream li {
+    /*color: pink;*/
+  }
+  main ol li {
+    margin-bottom: 4px;
+  }
+  main ol li img[alt="Arrow Up"] {
+    width: 12px;
+    height: 18px;
+    margin-right: 4px;
+  }
+  main ol li .articleInfo {
+    font-size: 1em;
+    font-weight: 400;
+    margin-top: 0;
+    margin-left: 16px;
+    /*border: 1px solid yellow;*/
+  }
+  footer ul {
+    display: block;
+  }
+  footer ul li {
+    display: inline;
+    margin-right: 0;
+  }
+}
+
+main ol.newsStream {
+  padding: 12px 24px;
+}
+
+@media (min-width:751px) {
+  nav ul {
+    width: 100%;
+  }
+}

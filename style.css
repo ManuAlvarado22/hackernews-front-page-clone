@@ -43,8 +43,12 @@ nav ul li {
 
 nav ul li:last-child {
   margin-left: auto;
+  margin-top: 0;
   /*margin-right: -2px;*/
   /*align-items: flex-end;*/
+}
+nav ul li:last-child a {
+  color: #000;
 }
 
 nav ul li a {
@@ -197,6 +201,9 @@ footer ul li:nth-child(odd) {
   }
   nav ul li:last-child {
     margin-top: -6px;
+  }
+  nav ul li:last-child a {
+    color: #000;
   }
   main {
     font-size: 1.1em;
